@@ -7,7 +7,7 @@ import (
 
 type Mahasiswa struct {
     Nama   string `json:"nama"`
-	Kelas    string `json:"kelas"`
+    Kelas    string `json:"kelas"`
     NPM    string `json:"npm"`
     Jurusan string `json:"jurusan"`
 }
@@ -18,7 +18,7 @@ func main() {
     r.GET("/datamahasiswa", func(c *gin.Context) {
         data := Mahasiswa{
             Nama:   "Resqi Aulia Gita Utami",
-			Kelas:  "2A",
+            Kelas:  "2A",
             NPM:    "714230003",
             Jurusan: "D4 Teknik Informatika",
         }
